@@ -108,12 +108,10 @@ public abstract class BaseUpdater {
 
             Collections.sort(features);
 
-            SwingUtilities.invokeAndWait(new Runnable() {
-                @Override
-                public void run() {
-                    new FeatureSelectionDialog(ProgressDialog.getLastDialog(), features).setVisible(true);
-                }
-            });
+            FeatureSelectionDialog featureDialog = new FeatureSelectionDialog(ProgressDialog.getLastDialog(), features);
+            featureDialog.setVisible(true);
+            // Wait until the feature selection dialog goes away
+            while(featureDialog.isVisible()) {}
 
             for (Feature feature : features) {
                 featuresCache.getSelected().put(Strings.nullToEmpty(feature.getName()), feature.isSelected());
