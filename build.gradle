@@ -24,7 +24,7 @@ def getDate() {
     return formattedDate
 }
 
-version = '4.3.2.'+getDate()
+version = '4.3.'+getDate()
 
 subprojects {
     apply plugin: 'java'
