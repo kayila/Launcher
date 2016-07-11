@@ -18,13 +18,7 @@ buildscript {
     }
 }
 
-def getDate() {
-    def date = new Date()
-    def formattedDate = date.format('yyMMddHHmmss')
-    return formattedDate
-}
-
-version = '4.3.'+getDate()
+version = '4.3.2'
 
 subprojects {
     apply plugin: 'java'
