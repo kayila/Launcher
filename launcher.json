@@ -1,4 +1,4 @@
 {
     "version": "${version}",
-    "url": "http://minecraft.kitsuneindustries.com/minecraft/launcher/${version}.jar.pack"
+    "url": "https://minecraft.kitsuneindustries.com/minecraft/launcher/${version}.jar.pack"
 }
