@@ -18,7 +18,7 @@ buildscript {
     }
 }
 
-version = '4.3.4'
+version = '4.3.5'
 
 subprojects {
     apply plugin: 'java'
